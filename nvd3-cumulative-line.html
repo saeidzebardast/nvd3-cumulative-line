@@ -6,7 +6,12 @@ An element to create cumulative line chart using nvd3.
 
 Example:
 
-    <nvd3-cumulative-line data="[[data]]"></nvd3-cumulative-line>
+    <nvd3-cumulative-line
+    data="[[data]]"
+    height="100"
+    width="400"
+    show-legend
+    use-interactive-guideline></nvd3-cumulative-line>
 
 Data Format:
 ```
@@ -199,7 +204,7 @@ Data Format:
 
       attached: function() {
         this.set('svg', this.$.svg);
-        
+
         if (!this.stopAutoDrawing) {
           this.generateChart();
         }
