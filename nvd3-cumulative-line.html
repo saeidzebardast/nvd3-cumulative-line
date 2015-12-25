@@ -67,7 +67,7 @@ Data Format:
 <dom-module id="nvd3-cumulative-line">
   <template>
     <div>
-      <svg id="svg"></svg>
+      <svg></svg>
     </div>
   </template>
 
@@ -202,9 +202,11 @@ Data Format:
         }
       },
 
-      attached: function() {
-        this.set('svg', this.$.svg);
+      ready: function() {
+        this.set('svg', this.$$('svg'));
+      },
 
+      attached: function() {
         if (!this.stopAutoDrawing) {
           this.generateChart();
         }
