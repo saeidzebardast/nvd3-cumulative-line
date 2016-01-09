@@ -60,5 +60,8 @@ bower install nvd3-cumulative-line
 ]
 ```
 
+## Demo and Options
+See the [component page](http://saeidzebardast.github.io/nvd3-cumulative-line) for demo and options.
+
 ## License
 MIT © [Saeid Zebardast](http://zebardast.com)
